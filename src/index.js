@@ -1,34 +1,29 @@
 document.getElementById('madera').onclick = function() {
-    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursormadera");
 }
 
 document.getElementById('trigo').onclick = function() {
-    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursortrigo");
 }
 
 document.getElementById('ladrillo').onclick = function() {
-    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursorladrillo");
 
 }
 
 document.getElementById('vidrio').onclick = function() {
-    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursorvidrio");
 
 }
 
 document.getElementById('piedra').onclick = function() {
-    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+    document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursorpiedra");
-
 }
-
-// function getId(id) {
-//     console.log(id);
-// }
 
 function setMaterial(id) {
     console.log(document.getElementById('container').classList.value);
@@ -36,20 +31,28 @@ function setMaterial(id) {
     switch (document.getElementById('container').classList.value) {
         case 'container cursorpiedra':
             document.getElementById(id).innerHTML = "<img src='/public/Piedra.png' alt='piedra' class='img-material'/>";
-            document.getElementById(id).
-            console.log(id)
+            document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+            document.getElementById("container").classList.add("cursornormal");
             break;
         case 'container cursorladrillo':
-            document.getElementById(id).innerHTML = "<img src='/public/Ladrillo.png' alt='piedra' class='img-material'/>";
+            document.getElementById(id).innerHTML = "<img src='/public/Ladrillo.png' alt='Ladrillo' class='img-material'/>";
+            document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+            document.getElementById("container").classList.add("cursornormal");
             break;
         case 'container cursormadera':
-            document.getElementById(id).innerHTML = "<img src='/public/madera.png' alt='piedra' class='img-material'/>";
+            document.getElementById(id).innerHTML = "<img src='/public/madera.png' alt='madera' class='img-material'/>";
+            document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+            document.getElementById("container").classList.add("cursornormal");
             break;
         case 'container cursorvidrio':
-            document.getElementById(id).innerHTML = "<img src='/public/Vidrio.png' alt='piedra' class='img-material'/>";
+            document.getElementById(id).innerHTML = "<img src='/public/Vidrio.png' alt='Vidrio' class='img-material'/>";
+            document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+            document.getElementById("container").classList.add("cursornormal");
             break;
         case 'container cursortrigo':
-            document.getElementById(id).innerHTML = "<img src='/public/Trigo.png' alt='piedra' class='img-material'/>";
+            document.getElementById(id).innerHTML = "<img src='/public/Trigo.png' alt='Trigo' class='img-material'/>";
+            document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra");
+            document.getElementById("container").classList.add("cursornormal");
             break;
         default:
             break;
