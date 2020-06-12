@@ -11,76 +11,81 @@
 <body>
     <header><img src="/public/logo.png" alt="" class="logo" /></header>
     <section class="container" id="container">
-        <div class="columna">
-            <table id="tabla-materiales">
-                <tbody>
-                    <tr>
-                        <td class="td-material tdh tda"><img src="/public/madera.png" class="img-material" id="madera">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-texto"> Madera</td>
-                    </tr>
-                    <tr>
-                        <td class="td-material tdh tda"><img src="/public/Trigo.png" class="img-material" id="trigo">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-texto">Trigo</td>
-                    </tr>
-                    <tr>
-                        <td class="td-material tdh tda"><img src="/public/Ladrillo.png" class="img-material" id="ladrillo"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-texto">Ladrillo</td>
-                    </tr>
-                    <tr>
-                        <td class="td-material tdh tda"><img src="/public/Vidrio.png" class="img-material" id="vidrio">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-texto">Vidrio</td>
-                    </tr>
-                    <tr>
-                        <td class="td-material tdh tda"><img src="/public/Piedra.png" class="img-material" id="piedra">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-texto">Piedra</td>
-                    </tr>
-                </tbody>
+        <div class="tablaEdificios">
+            <table id="tablaEdificios">
+                <tr>
+                    <td class="td-edificio tdh tda" id="c1"><img src="/public/builds/cabana.PNG" alt="" class="img-builds"></td>
+                    <td class="td-edificio tdh tda" id="c2">Granja</td>
+                </tr>
+                <tr>
+                    <td class="td-edificio tdh tda" id="c3">asd</td>
+                    <td class="td-edificio tdh tda" id="c4">asd</td>
+                </tr>
+                <tr>
+                    <td class="td-edificio tdh tda" id="c5">asd</td>
+                    <td class="td-edificio tdh tda" id="c6">asd</td>
+                </tr>
+                <tr>
+                    <td class="td-edificio tdh tda" id="c7">asd</td>
+                    <td class="td-edificio tdh tda" id="c8">asd</td>
+                </tr>
             </table>
         </div>
         <div class="columna">
-            <table id="tabla-juego">
-                <tbody class="tbody">
-                    <tr>
-                        <td class="td-tablero tdh tda" id="0" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="1" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="2" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="3" onclick="setMaterial(this.id)"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-tablero tdh tda" id="4" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="5" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="6" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="7" onclick="setMaterial(this.id)"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-tablero tdh tda" id="8" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="9" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="10" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="11" onclick="setMaterial(this.id)"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-tablero tdh tda" id="12" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="13" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="14" onclick="setMaterial(this.id)"></td>
-                        <td class="td-tablero tdh tda" id="15" onclick="setMaterial(this.id)"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div>
+                <table id="tabla-materiales">
+                    <tbody>
+                        <tr>
+                            <td class="td-material tdh tda"><img src="/public/madera.png" class="img-material" id="madera"></td>
+                            <td class="td-material tdh tda"><img src="/public/Trigo.png" class="img-material" id="trigo"></td>
+                            <td class="td-material tdh tda"><img src="/public/Ladrillo.png" class="img-material" id="ladrillo"></td>
+                            <td class="td-material tdh tda"><img src="/public/Vidrio.png" class="img-material" id="vidrio"></td>
+                            <td class="td-material tdh tda"><img src="/public/Piedra.png" class="img-material" id="piedra"></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td class="td-texto"> Madera</td>
+                            <td class="td-texto">Trigo</td>
+                            <td class="td-texto">Ladrillo</td>
+                            <td class="td-texto">Vidrio</td>
+                            <td class="td-texto">Piedra</td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table id="tabla-juego">
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="td-tablero tdh tda" id="0" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="1" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="2" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="3" onclick="setMaterial(this.id)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-tablero tdh tda" id="4" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="5" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="6" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="7" onclick="setMaterial(this.id)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-tablero tdh tda" id="8" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="9" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="10" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="11" onclick="setMaterial(this.id)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-tablero tdh tda" id="12" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="13" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="14" onclick="setMaterial(this.id)"></td>
+                            <td class="td-tablero tdh tda" id="15" onclick="setMaterial(this.id)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <img src="/public/reset.png" class="img-material" alt="" onclick="restart()">
     </section>
     <script src="index.js"></script>
 </body>
