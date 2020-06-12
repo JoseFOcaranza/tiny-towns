@@ -1,3 +1,4 @@
+//Funciones para cambiar el cursor a la imagen del material seleccionado
 document.getElementById('madera').onclick = function() {
     document.getElementById("container").classList.remove("cursormadera", "cursortrigo", "cursorladrillo", "cursorvidrio", "cursorpiedra", "cursornormal");
     document.getElementById("container").classList.toggle("cursormadera");
@@ -25,6 +26,7 @@ document.getElementById('piedra').onclick = function() {
     document.getElementById("container").classList.toggle("cursorpiedra");
 }
 
+//Funcion para poner en el tablero el material, el cursor cambia con las clases 'cursor'
 function setMaterial(id) {
     console.log(document.getElementById('container').classList.value);
     console.log(id)
@@ -64,6 +66,7 @@ function setMaterial(id) {
     }
 }
 
+//Ps el boton de reinicio
 function restart() {
     var mensaje = confirm('¿Seguro quieres reiniciar el juego?');
     if (mensaje.valueOf()) {
@@ -80,8 +83,11 @@ function restart() {
     }
 
 }
+
+//cuando se carga el html se generan los edificios con Random
 window.onload = randomBuilds();
 
+//funcion que genera la seleccion de edificios aleatoria
 function randomBuilds() {
     for (let i = 0; i < 6; i++) {
         var random = Math.ceil(Math.random() * 4);
@@ -206,6 +212,8 @@ function randomBuilds() {
             break;
     }
 }
+
+//de aqui para abajo estoy chambeando en la ruleta de materiales
 
 function ruletaInicio() {
 
