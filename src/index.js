@@ -1,3 +1,4 @@
+//var myArray = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 //Funciones para cambiar el cursor a la imagen del material seleccionado
 document.getElementById("madera").onclick = function () {
   document
@@ -71,8 +72,6 @@ document.getElementById("piedra").onclick = function () {
 
 //Funcion para poner en el tablero el material, el cursor cambia con las clases 'cursor'
 function setMaterial(id) {
-  console.log(document.getElementById("container").classList.value);
-  console.log(id);
   switch (document.getElementById("container").classList.value) {
     case "container cursorpiedra":
       document.getElementById(id).innerHTML =
@@ -88,6 +87,9 @@ function setMaterial(id) {
         );
       document.getElementById("container").classList.add("cursornormal");
       document.getElementById(id).style.pointerEvents = "none";
+      myArray[parseInt(id)] = "p";
+      barrido(myArray, "p");
+      cotage(myArray, "p");
       break;
     case "container cursorladrillo":
       document.getElementById(id).innerHTML =
@@ -103,6 +105,9 @@ function setMaterial(id) {
         );
       document.getElementById("container").classList.add("cursornormal");
       document.getElementById(id).style.pointerEvents = "none";
+      myArray[parseInt(id)] = "l";
+      barrido(myArray, "l");
+      cotage(myArray, "l");
       break;
     case "container cursormadera":
       document.getElementById(id).innerHTML =
@@ -118,6 +123,9 @@ function setMaterial(id) {
         );
       document.getElementById("container").classList.add("cursornormal");
       document.getElementById(id).style.pointerEvents = "none";
+      myArray[parseInt(id)] = "m";
+      barrido(myArray, "m");
+      cotage(myArray, "m");
       break;
     case "container cursorvidrio":
       document.getElementById(id).innerHTML =
@@ -133,6 +141,9 @@ function setMaterial(id) {
         );
       document.getElementById("container").classList.add("cursornormal");
       document.getElementById(id).style.pointerEvents = "none";
+      myArray[parseInt(id)] = "v";
+      barrido(myArray, "v");
+      cotage(myArray, "v");
       break;
     case "container cursortrigo":
       document.getElementById(id).innerHTML =
@@ -148,6 +159,9 @@ function setMaterial(id) {
         );
       document.getElementById("container").classList.add("cursornormal");
       document.getElementById(id).style.pointerEvents = "none";
+      myArray[parseInt(id)] = "t";
+      barrido(myArray, "t");
+      cotage(myArray, "t");
       break;
     default:
       break;
@@ -172,6 +186,24 @@ function restart() {
           "cursorpiedra"
         );
       document.getElementById("container").classList.add("cursornormal");
+      myArray = [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+      ];
     }
     randomBuilds();
   } else {
