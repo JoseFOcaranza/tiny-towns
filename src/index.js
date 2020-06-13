@@ -70,7 +70,7 @@ function setMaterial(id) {
 function restart() {
     var mensaje = confirm('¿Seguro quieres reiniciar el juego?');
     if (mensaje.valueOf()) {
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 16; i++) {
             document.getElementById(i).innerHTML = '';
             document.getElementById(i).style.pointerEvents = 'auto';
 
@@ -94,76 +94,76 @@ function randomBuilds() {
         var indice = (10 * i) + random;
         switch (indice) {
             case 1:
-                document.getElementById('c2').innerHTML = "<img src='/public/builds/granja.png' alt='granja' class='img-builds'/>";
+                document.getElementById('c2').innerHTML = "<img src='/public/builds/granja.PNG' alt='granja' class='img-builds'/>";
                 break;
             case 2:
-                document.getElementById('c2').innerHTML = "<img src='/public/builds/granero.png' alt='granero' class='img-builds'/>";
+                document.getElementById('c2').innerHTML = "<img src='/public/builds/granero.PNG' alt='granero' class='img-builds'/>";
                 break;
             case 3:
-                document.getElementById('c2').innerHTML = "<img src='/public/builds/invernadero.png' alt='invernadero' class='img-builds'/>";
+                document.getElementById('c2').innerHTML = "<img src='/public/builds/invernadero.PNG' alt='invernadero' class='img-builds'/>";
                 break;
             case 4:
-                document.getElementById('c2').innerHTML = "<img src='/public/builds/huerto.png' alt='huerto' class='img-builds'/>";
+                document.getElementById('c2').innerHTML = "<img src='/public/builds/huerto.PNG' alt='huerto' class='img-builds'/>";
                 break;
             case 11:
-                document.getElementById('c3').innerHTML = "<img src='/public/builds/fuente.png' alt='fuente' class='img-builds'/>";
+                document.getElementById('c3').innerHTML = "<img src='/public/builds/fuente.PNG' alt='fuente' class='img-builds'/>";
                 break;
             case 12:
-                document.getElementById('c3').innerHTML = "<img src='/public/builds/molinoPiedra.png' alt='molinoPiedra' class='img-builds'/>";
+                document.getElementById('c3').innerHTML = "<img src='/public/builds/molinoPiedra.PNG' alt='molinoPiedra' class='img-builds'/>";
                 break;
             case 13:
-                document.getElementById('c3').innerHTML = "<img src='/public/builds/cobertizo.png' alt='cobertizo' class='img-builds'/>";
+                document.getElementById('c3').innerHTML = "<img src='/public/builds/cobertizo.PNG' alt='cobertizo' class='img-builds'/>";
                 break;
             case 14:
-                document.getElementById('c3').innerHTML = "<img src='/public/builds/pozo.png' alt='pozo' class='img-builds'/>";
+                document.getElementById('c3').innerHTML = "<img src='/public/builds/pozo.PNG' alt='pozo' class='img-builds'/>";
                 break;
             case 21:
-                document.getElementById('c4').innerHTML = "<img src='/public/builds/abadia.png' alt='abadia' class='img-builds'/>";
+                document.getElementById('c4').innerHTML = "<img src='/public/builds/abadia.PNG' alt='abadia' class='img-builds'/>";
                 break;
             case 22:
-                document.getElementById('c4').innerHTML = "<img src='/public/builds/capilla.png' alt='capilla' class='img-builds'/>";
+                document.getElementById('c4').innerHTML = "<img src='/public/builds/capilla.PNG' alt='capilla' class='img-builds'/>";
                 break;
             case 23:
-                document.getElementById('c4').innerHTML = "<img src='/public/builds/claustro.png' alt='claustro' class='img-builds'/>";
+                document.getElementById('c4').innerHTML = "<img src='/public/builds/claustro.PNG' alt='claustro' class='img-builds'/>";
                 break;
             case 24:
-                document.getElementById('c4').innerHTML = "<img src='/public/builds/templo.png' alt='templo' class='img-builds'/>";
+                document.getElementById('c4').innerHTML = "<img src='/public/builds/templo.PNG' alt='templo' class='img-builds'/>";
                 break;
             case 31:
-                document.getElementById('c5').innerHTML = "<img src='/public/builds/asilo.png' alt='asilo' class='img-builds'/>";
+                document.getElementById('c5').innerHTML = "<img src='/public/builds/asilo.PNG' alt='asilo' class='img-builds'/>";
                 break;
             case 32:
-                document.getElementById('c5').innerHTML = "<img src='/public/builds/sala de fiestas.png' alt='sala de fiestas' class='img-builds'/>";
+                document.getElementById('c5').innerHTML = "<img src='/public/builds/sala de fiestas.PNG' alt='sala de fiestas' class='img-builds'/>";
                 break;
             case 33:
-                document.getElementById('c5').innerHTML = "<img src='/public/builds/posada.png' alt='posada' class='img-builds'/>";
+                document.getElementById('c5').innerHTML = "<img src='/public/builds/posada.PNG' alt='posada' class='img-builds'/>";
                 break;
             case 34:
-                document.getElementById('c5').innerHTML = "<img src='/public/builds/taverna.png' alt='taverna' class='img-builds'/>";
+                document.getElementById('c5').innerHTML = "<img src='/public/builds/taverna.PNG' alt='taverna' class='img-builds'/>";
                 break;
             case 41:
-                document.getElementById('c6').innerHTML = "<img src='/public/builds/pasteleria.png' alt='pasteleria' class='img-builds'/>";
+                document.getElementById('c6').innerHTML = "<img src='/public/builds/pasteleria.PNG' alt='pasteleria' class='img-builds'/>";
                 break;
             case 42:
-                document.getElementById('c6').innerHTML = "<img src='/public/builds/mercado.png' alt='mercado' class='img-builds'/>";
+                document.getElementById('c6').innerHTML = "<img src='/public/builds/mercado.PNG' alt='mercado' class='img-builds'/>";
                 break;
             case 43:
-                document.getElementById('c6').innerHTML = "<img src='/public/builds/sastre.png' alt='sastre' class='img-builds'/>";
+                document.getElementById('c6').innerHTML = "<img src='/public/builds/sastre.PNG' alt='sastre' class='img-builds'/>";
                 break;
             case 44:
-                document.getElementById('c6').innerHTML = "<img src='/public/builds/teatro.png' alt='teatro' class='img-builds'/>";
+                document.getElementById('c6').innerHTML = "<img src='/public/builds/teatro.PNG' alt='teatro' class='img-builds'/>";
                 break;
             case 51:
-                document.getElementById('c7').innerHTML = "<img src='/public/builds/banco.png' alt='banco' class='img-builds'/>";
+                document.getElementById('c7').innerHTML = "<img src='/public/builds/banco.PNG' alt='banco' class='img-builds'/>";
                 break;
             case 52:
-                document.getElementById('c7').innerHTML = "<img src='/public/builds/fabrica.png' alt='fabrica' class='img-builds'/>";
+                document.getElementById('c7').innerHTML = "<img src='/public/builds/fabrica.PNG' alt='fabrica' class='img-builds'/>";
                 break;
             case 53:
-                document.getElementById('c7').innerHTML = "<img src='/public/builds/centroComercial.png' alt='centroComercial' class='img-builds'/>";
+                document.getElementById('c7').innerHTML = "<img src='/public/builds/centroComercial.PNG' alt='centroComercial' class='img-builds'/>";
                 break;
             case 54:
-                document.getElementById('c7').innerHTML = "<img src='/public/builds/almacen.png' alt='almacen' class='img-builds'/>";
+                document.getElementById('c7').innerHTML = "<img src='/public/builds/almacen.PNG' alt='almacen' class='img-builds'/>";
                 break;
             default:
                 break;
@@ -216,10 +216,6 @@ function randomBuilds() {
 //de aqui para abajo estoy chambeando en la ruleta de materiales
 
 function ruletaInicio() {
-
-}
-
-function ruletaMateriales() {
     var materiales = ['m', 'm', 'm', 'p', 'p', 'p', 'v', 'v', 'v', 't', 't', 't', 'l', 'l', 'l'];
     var m1, m2, m3;
     m1 = Math.ceil(Math.random() * 14);
@@ -234,4 +230,8 @@ function ruletaMateriales() {
     materiales.pop(m1);
     materiales.pop(m2);
     materiales.pop(m3);
+}
+
+function ruletaMateriales() {
+
 }
