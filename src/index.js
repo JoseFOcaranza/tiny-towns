@@ -350,6 +350,52 @@ function randomBuilds() {
                 "<img src='/public/builds/uni.png' alt='uni' class='img-builds'/>";
             break;
 
+            break;
+        case 2:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/palacioMandras.png' alt='palacioMandras' class='img-builds'/>";
+            break;
+        case 3:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/atalayaOpalo.png' alt='atalayaOpalo' class='img-builds'/>";
+            break;
+        case 4:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/archivoSegundaEdad.png' alt='archivoSegundaEdad' class='img-builds'/>";
+            break;
+        case 5:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/santuario.png' alt='santuario' class='img-builds'/>";
+            break;
+        case 6:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/castilloBarret.png' alt='castilloBarret' class='img-builds'/>";
+            break;
+        case 7:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/forum.png' alt='forum' class='img-builds'/>";
+            break;
+        case 8:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/catedral.png' alt='catedral' class='img-builds'/>";
+            break;
+        case 9:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/starloom.png' alt='starloom' class='img-builds'/>";
+            break;
+        case 10:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/Fuerte.png' alt='Fuerte' class='img-builds'/>";
+            break;
+        case 11:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/estatua.png' alt='estatua' class='img-builds'/>";
+            break;
+        case 12:
+            document.getElementById("c8").innerHTML =
+                "<img src='/public/builds/uni.png' alt='uni' class='img-builds'/>";
+            break;
+
         default:
             break;
     }
