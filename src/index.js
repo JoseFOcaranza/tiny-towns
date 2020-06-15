@@ -114,6 +114,16 @@ function setMaterial(id) {
             myArray[parseInt(id)] = "p";
             barrido(myArray, "p");
             cotage(myArray, "p");
+            cathedral(myArray, "p");
+            fountain(myArray, "p");
+            cloister(myArray, "p");
+            archGuild(myArray, "p");
+            inn(myArray, "p");
+            orchard(myArray, "p");
+            abbey(myArray, "p");
+            chapel(myArray, "p");
+            temple(myArray, "p");
+            almshouse(myArray, "p");
             break;
         case "container cursorladrillo":
             document.getElementById(id).innerHTML =
@@ -133,6 +143,14 @@ function setMaterial(id) {
             myArray[parseInt(id)] = "l";
             barrido(myArray, "l");
             cotage(myArray, "l");
+            cathedral(myArray, "l");
+            cloister(myArray, "l");
+            archGuild(myArray, "l");
+            palaceMandras(myArray, "l");
+            granary(myArray, "l");
+            abbey(myArray, "l");
+            temple(myArray, "l");
+
             break;
         case "container cursormadera":
             document.getElementById(id).innerHTML =
@@ -152,6 +170,16 @@ function setMaterial(id) {
             myArray[parseInt(id)] = "m";
             barrido(myArray, "m");
             cotage(myArray, "m");
+            farm(myArray, "m");
+            cathedral(myArray, "m");
+            fountain(myArray, "m");
+            cloister(myArray, "m");
+            archGuild(myArray, "m");
+            palaceMandras(myArray, "m");
+            granary(myArray, "m");
+            greehouse(myArray, "m");
+            orchard(myArray, "m");
+            feastHall(myArray, "m");
             break;
         case "container cursorvidrio":
             document.getElementById(id).innerHTML =
@@ -171,6 +199,17 @@ function setMaterial(id) {
             myArray[parseInt(id)] = "v";
             barrido(myArray, "v");
             cotage(myArray, "v");
+            cathedral(myArray, "v");
+            cloister(myArray, "v");
+            archGuild(myArray, "v");
+            palaceMandras(myArray, "v");
+            inn(myArray, "v");
+            greehouse(myArray, "v");
+            abbey(myArray, "v");
+            chapel(myArray, "v");
+            temple(myArray, "v");
+            almshouse(myArray, "v");
+            feastHall(myArray, "v");
             break;
         case "container cursortrigo":
             document.getElementById(id).innerHTML =
@@ -190,13 +229,20 @@ function setMaterial(id) {
             myArray[parseInt(id)] = "t";
             barrido(myArray, "t");
             cotage(myArray, "t");
+            farm(myArray, "t");
+            cathedral(myArray, "t");
+            archGuild(myArray, "t");
+            palaceMandras(myArray, "t");
+            inn(myArray, "t");
+            granary(myArray, "t");
+            greehouse(myArray, "t");
+            orchard(myArray, "t");
+
             break;
         default:
             break;
     }
 }
-
-
 
 //Ps el boton de reinicio
 function restart() {
