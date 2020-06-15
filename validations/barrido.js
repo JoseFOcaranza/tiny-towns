@@ -4,10 +4,9 @@ var myArray = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 function barrido(myArray, material) {
   var indices = [];
   var valor = myArray.indexOf(material);
-  while (valor != -1) {
-    indices.push(valor);
-    valor = myArray.indexOf(material, valor + 1);
-  }
+
+  indices.push(valor);
+  console.log(indices);
   return indices;
 }
 
@@ -30,6 +29,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 5] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 1");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -37,6 +37,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 5] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 2 ");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -44,6 +45,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 3] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 3");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -51,6 +53,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "v"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 4");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -58,6 +61,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 5] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 5");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -65,6 +69,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 3] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 6");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
@@ -72,6 +77,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 5] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA 7");
       }
       break;
     case "v":
@@ -81,6 +87,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -88,6 +95,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -95,6 +103,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -102,6 +111,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -109,6 +119,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 4] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -116,6 +127,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 4] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -123,6 +135,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 4] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "v" &&
@@ -130,6 +143,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 4] == "l"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       break;
     case "l":
@@ -139,6 +153,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 3] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -146,6 +161,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 5] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -153,6 +169,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 5] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -160,6 +177,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 3] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -167,6 +185,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 3] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -174,6 +193,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) + 5] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -181,6 +201,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 4] == "v"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       if (
         myArray[parseInt(condicion)] == "l" &&
@@ -188,6 +209,7 @@ function cotage(myArray, material) {
         myArray[parseInt(condicion) - 5] == "t"
       ) {
         //Llamar la funcion construir()
+        console.log("CASA");
       }
       break;
 
@@ -198,7 +220,7 @@ function cotage(myArray, material) {
 
 function cathedral(myArray, material) {
   var condicion = barrido(myArray, material);
-  console.log("ENtro a CATEDRAL");
+
   switch (myArray[condicion]) {
     case "t":
       if (
@@ -406,140 +428,81 @@ function cathedral(myArray, material) {
 
 function farm(myArray, material) {
   var condicion = barrido(myArray, material);
-  //console.log("ENtro a farm");
-  console.log(myArray[condicion]);
   switch (myArray[condicion]) {
     case "t":
       if (
         myArray[parseInt(condicion)] == "t" &&
         myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granja termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
         myArray[parseInt(condicion) + 3] == "m" &&
-        myArray[parseInt(condicion) + 4] == "m"
+        myArray[parseInt(condicion) + 4] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("CONSTRUYE granja");
+        console.log("construye granja rotada 90 termina con t");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 4] == "v" &&
-        myArray[parseInt(condicion) + 5] == "p"
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "m"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("construye granja rotada 180 termina con t");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 1] == "v" &&
-        myArray[parseInt(condicion) - 5] == "p"
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "m"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 1] == "v" &&
-        myArray[parseInt(condicion) - 3] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 3] == "p" &&
-        myArray[parseInt(condicion) - 4] == "v"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 4] == "v" &&
-        myArray[parseInt(condicion) - 5] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 1] == "v" &&
-        myArray[parseInt(condicion) + 3] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 1] == "v" &&
-        myArray[parseInt(condicion) + 5] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("construye granja rotada 270 termina con t");
       }
       break;
     case "m":
       if (
         myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "t" &&
         myArray[parseInt(condicion) - 4] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) + 1] == "p" &&
-        myArray[parseInt(condicion) - 4] == "t"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granja termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) + 1] == "t" &&
-        myArray[parseInt(condicion) - 4] == "p"
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("construye granja rotada 90 termina con m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye granja rotada 180 termina con m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) - 1] == "t" &&
-        myArray[parseInt(condicion) - 4] == "p"
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) + 1] == "p" &&
-        myArray[parseInt(condicion) + 4] == "t"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) - 1] == "p" &&
-        myArray[parseInt(condicion) + 4] == "t"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) + 1] == "t" &&
-        myArray[parseInt(condicion) + 4] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) - 1] == "t" &&
-        myArray[parseInt(condicion) + 4] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("construye granja rotada 270 termina con t");
       }
       break;
 
@@ -1766,133 +1729,805 @@ function granary(myArray, material) {
       if (
         myArray[parseInt(condicion)] == "t" &&
         myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) + 3] == "l" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 90 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 180 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 270 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "l" &&
+        myArray[parseInt(condicion) - 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado  termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
         myArray[parseInt(condicion) + 3] == "m" &&
-        myArray[parseInt(condicion) + 4] == "m"
+        myArray[parseInt(condicion) + 4] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("CONSTRUYE granja");
+        console.log("CONSTRUYE granero espejeado 90 termina t");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 4] == "v" &&
-        myArray[parseInt(condicion) + 5] == "p"
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 5] == "m"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero espejeado 180 termina t");
       }
       if (
         myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 1] == "v" &&
-        myArray[parseInt(condicion) - 5] == "p"
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "l"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 1] == "v" &&
-        myArray[parseInt(condicion) - 3] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 3] == "p" &&
-        myArray[parseInt(condicion) - 4] == "v"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 4] == "v" &&
-        myArray[parseInt(condicion) - 5] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) - 1] == "v" &&
-        myArray[parseInt(condicion) + 3] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "t" &&
-        myArray[parseInt(condicion) + 1] == "v" &&
-        myArray[parseInt(condicion) + 5] == "p"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero espejeado 270 termina t");
       }
       break;
     case "m":
       if (
         myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) - 3] == "t" &&
         myArray[parseInt(condicion) - 4] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) + 1] == "p" &&
-        myArray[parseInt(condicion) - 4] == "t"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) + 1] == "t" &&
-        myArray[parseInt(condicion) - 4] == "p"
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 5] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero rotado 90 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 180 termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) - 1] == "t" &&
-        myArray[parseInt(condicion) - 4] == "p"
+        myArray[parseInt(condicion) - 4] == "l" &&
+        myArray[parseInt(condicion) - 5] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero rotado 270 termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) + 1] == "p" &&
-        myArray[parseInt(condicion) + 4] == "t"
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "t"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
-      }
-      if (
-        myArray[parseInt(condicion)] == "m" &&
-        myArray[parseInt(condicion) - 1] == "p" &&
-        myArray[parseInt(condicion) + 4] == "t"
-      ) {
-        //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero espejeado  termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) + 1] == "t" &&
-        myArray[parseInt(condicion) + 4] == "p"
+        myArray[parseInt(condicion) - 3] == "t" &&
+        myArray[parseInt(condicion) - 4] == "l"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE granero espejeado 90 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) - 4] == "t" &&
+        myArray[parseInt(condicion) - 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado 180 termina m");
       }
       if (
         myArray[parseInt(condicion)] == "m" &&
         myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado 270 termina m");
+      }
+      break;
+    case "l":
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) - 4] == "t" &&
+        myArray[parseInt(condicion) - 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "t" &&
+        myArray[parseInt(condicion) - 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 90 termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 180 termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero rotado 270 termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado  termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado 90 termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "t" &&
+        myArray[parseInt(condicion) - 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado 180 termina l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) - 4] == "m" &&
+        myArray[parseInt(condicion) - 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE granero espejeado 270 termina l");
+      }
+      break;
+    default:
+      break;
+  }
+}
+
+function greehouse(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "t":
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) + 3] == "m" &&
+        myArray[parseInt(condicion) + 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 90 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) - 4] == "m" &&
+        myArray[parseInt(condicion) - 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 180 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 270 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado  termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) - 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 90 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 180 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 270 termina t");
+      }
+      break;
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "m" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) - 4] == "t" &&
+        myArray[parseInt(condicion) - 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 90 termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 180 termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 270 termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) - 4] == "m" &&
+        myArray[parseInt(condicion) - 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado  termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) + 3] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 90 termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 180 termina v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 270 termina v");
+      }
+      break;
+    case "m":
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "v" &&
+        myArray[parseInt(condicion) - 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 90 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 180 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero rotado 270 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado  termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 90 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) - 3] == "t" &&
+        myArray[parseInt(condicion) - 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 180 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "v" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE invernadero espejeado 270 termina m");
+      }
+      break;
+    default:
+      break;
+  }
+}
+
+function orchard(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "t":
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 90 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) + 3] == "t" &&
         myArray[parseInt(condicion) + 4] == "p"
       ) {
         //Llamar la funcion construir()
-        console.log("construye granja");
+        console.log("CONSTRUYE huerto rotado 180 termina t");
+      }
+      if (
+        myArray[parseInt(condicion)] == "t" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 270 termina t");
+      }
+      break;
+    case "p":
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto termina p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "m" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 90 termina p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) - 4] == "t" &&
+        myArray[parseInt(condicion) - 5] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 180 termina p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "m" &&
+        myArray[parseInt(condicion) - 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 270 termina p");
+      }
+      break;
+    case "m":
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) - 4] == "t" &&
+        myArray[parseInt(condicion) - 5] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) - 3] == "p" &&
+        myArray[parseInt(condicion) - 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 90 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "t" &&
+        myArray[parseInt(condicion) + 4] == "t" &&
+        myArray[parseInt(condicion) + 5] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 180 termina m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "t" &&
+        myArray[parseInt(condicion) + 3] == "p" &&
+        myArray[parseInt(condicion) + 4] == "t"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE huerto rotado 270 termina m");
+      }
+
+      break;
+    default:
+      break;
+  }
+}
+
+function abbey(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "l":
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 2] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 8] == "p" &&
+        myArray[parseInt(condicion) + 9] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 90 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 2] == "p" &&
+        myArray[parseInt(condicion) + 2] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 180 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 8] == "p" &&
+        myArray[parseInt(condicion) - 9] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 270 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "p" &&
+        myArray[parseInt(condicion) + 6] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 7] == "v" &&
+        myArray[parseInt(condicion) - 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 90 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 2] == "p" &&
+        myArray[parseInt(condicion) - 6] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 180 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 7] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 270 terminando con l");
+      }
+      break;
+    case "p":
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) - 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "l" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "l" &&
+        myArray[parseInt(condicion) + 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 8] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 270 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 8] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "l" &&
+        myArray[parseInt(condicion) + 3] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 270 terminando con p");
+      }
+      break;
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 2] == "l" &&
+        myArray[parseInt(condicion) + 3] == "p" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 5] == "p" &&
+        myArray[parseInt(condicion) - 9] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 2] == "l" &&
+        myArray[parseInt(condicion) - 3] == "p" &&
+        myArray[parseInt(condicion) - 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 5] == "p" &&
+        myArray[parseInt(condicion) + 9] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia rotado 270 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 5] == "p" &&
+        myArray[parseInt(condicion) - 6] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 3] == "p" &&
+        myArray[parseInt(condicion) + 7] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "p" &&
+        myArray[parseInt(condicion) + 6] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) - 3] == "p" &&
+        myArray[parseInt(condicion) - 7] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE abadia espejeado 270 terminando con v");
       }
       break;
 
