@@ -11,6 +11,7 @@ function cotage(myArray, material) {
                 myArray[parseInt(condicion) + 3] == "l" &&
                 myArray[parseInt(condicion) + 4] == "v"
             ) {
+                console.log("CONSTRUYE TU CASITA");
                 //Quieres construir una casita crack???
                 //Llamar la funcion construir()
             }

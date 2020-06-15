@@ -1,79 +1,100 @@
-var miarray = [15];
+window.onload = randomBuilds();
+window.onload = ruletaInicio();
+var idMaterial = '';
+var materiales = [];
+
+//Funcion que obtiene el id del campo del material seleccionado
+async function getid(id) {
+    idMaterial = id;
+}
+
 //Funciones para cambiar el cursor a la imagen del material seleccionado
-document.getElementById("madera").onclick = function() {
-    document
-        .getElementById("container")
-        .classList.remove(
-            "cursormadera",
-            "cursortrigo",
-            "cursorladrillo",
-            "cursorvidrio",
-            "cursorpiedra",
-            "cursornormal"
-        );
-    document.getElementById("container").classList.toggle("cursormadera");
-};
+async function madera() {
+    getid()
+    document.getElementById("madera").onclick = function() {
+        document.getElementById("container")
+            .classList.remove(
+                "cursormadera",
+                "cursortrigo",
+                "cursorladrillo",
+                "cursorvidrio",
+                "cursorpiedra",
+                "cursornormal"
+            );
+        document.getElementById("container").classList.toggle("cursormadera");
+    };
+}
 
-document.getElementById("trigo").onclick = function() {
-    document
-        .getElementById("container")
-        .classList.remove(
-            "cursormadera",
-            "cursortrigo",
-            "cursorladrillo",
-            "cursorvidrio",
-            "cursorpiedra",
-            "cursornormal"
-        );
-    document.getElementById("container").classList.toggle("cursortrigo");
-};
+async function trigo() {
+    getid()
+    document.getElementById("trigo").onclick = function() {
+        document.getElementById("container")
+            .classList.remove(
+                "cursormadera",
+                "cursortrigo",
+                "cursorladrillo",
+                "cursorvidrio",
+                "cursorpiedra",
+                "cursornormal"
+            );
+        document.getElementById("container").classList.toggle("cursortrigo");
 
-document.getElementById("ladrillo").onclick = function() {
-    document
-        .getElementById("container")
-        .classList.remove(
-            "cursormadera",
-            "cursortrigo",
-            "cursorladrillo",
-            "cursorvidrio",
-            "cursorpiedra",
-            "cursornormal"
-        );
-    document.getElementById("container").classList.toggle("cursorladrillo");
-};
+    };
+}
 
-document.getElementById("vidrio").onclick = function() {
-    document
-        .getElementById("container")
-        .classList.remove(
-            "cursormadera",
-            "cursortrigo",
-            "cursorladrillo",
-            "cursorvidrio",
-            "cursorpiedra",
-            "cursornormal"
-        );
-    document.getElementById("container").classList.toggle("cursorvidrio");
-};
+async function vidrio() {
+    getid()
+    document.getElementById("vidrio").onclick = function() {
+        document.getElementById("container")
+            .classList.remove(
+                "cursormadera",
+                "cursortrigo",
+                "cursorladrillo",
+                "cursorvidrio",
+                "cursorpiedra",
+                "cursornormal"
+            );
+        document.getElementById("container").classList.toggle("cursorvidrio");
 
-document.getElementById("piedra").onclick = function() {
-    document
-        .getElementById("container")
-        .classList.remove(
-            "cursormadera",
-            "cursortrigo",
-            "cursorladrillo",
-            "cursorvidrio",
-            "cursorpiedra",
-            "cursornormal"
-        );
-    document.getElementById("container").classList.toggle("cursorpiedra");
-};
+    };
+}
+
+
+async function ladrillo() {
+    getid()
+    document.getElementById("ladrillo").onclick = function() {
+        document.getElementById("container")
+            .classList.remove(
+                "cursormadera",
+                "cursortrigo",
+                "cursorladrillo",
+                "cursorvidrio",
+                "cursorpiedra",
+                "cursornormal"
+            );
+        document.getElementById("container").classList.toggle("cursorladrillo");
+
+    };
+}
+
+async function piedra() {
+    getid()
+    document.getElementById("piedra").onclick = function() {
+        document.getElementById("container")
+            .classList.remove(
+                "cursormadera",
+                "cursortrigo",
+                "cursorladrillo",
+                "cursorvidrio",
+                "cursorpiedra",
+                "cursornormal"
+            );
+        document.getElementById("container").classList.toggle("cursorpiedra");
+    };
+}
 
 //Funcion para poner en el tablero el material, el cursor cambia con las clases 'cursor'
 function setMaterial(id) {
-    console.log(document.getElementById("container").classList.value);
-    console.log(id);
     switch (document.getElementById("container").classList.value) {
         case "container cursorpiedra":
             document.getElementById(id).innerHTML =
@@ -89,8 +110,10 @@ function setMaterial(id) {
                 );
             document.getElementById("container").classList.add("cursornormal");
             document.getElementById(id).style.pointerEvents = "none";
-            miarray[parseInt(id)] = 'piedroso';
-            console.log(miarray);
+            cambiarMaterial();
+            myArray[parseInt(id)] = "p";
+            barrido(myArray, "p");
+            cotage(myArray, "p");
             break;
         case "container cursorladrillo":
             document.getElementById(id).innerHTML =
@@ -106,8 +129,10 @@ function setMaterial(id) {
                 );
             document.getElementById("container").classList.add("cursornormal");
             document.getElementById(id).style.pointerEvents = "none";
-            miarray[parseInt(id)] = 'ladrillo';
-            console.log(miarray);
+            cambiarMaterial();
+            myArray[parseInt(id)] = "l";
+            barrido(myArray, "l");
+            cotage(myArray, "l");
             break;
         case "container cursormadera":
             document.getElementById(id).innerHTML =
@@ -123,8 +148,10 @@ function setMaterial(id) {
                 );
             document.getElementById("container").classList.add("cursornormal");
             document.getElementById(id).style.pointerEvents = "none";
-            miarray[parseInt(id)] = 'madera';
-            console.log(miarray);
+            cambiarMaterial();
+            myArray[parseInt(id)] = "m";
+            barrido(myArray, "m");
+            cotage(myArray, "m");
             break;
         case "container cursorvidrio":
             document.getElementById(id).innerHTML =
@@ -140,9 +167,10 @@ function setMaterial(id) {
                 );
             document.getElementById("container").classList.add("cursornormal");
             document.getElementById(id).style.pointerEvents = "none";
-            miarray[parseInt(id)] = 'vidrio';
-            console.log(miarray);
-            clg
+            cambiarMaterial();
+            myArray[parseInt(id)] = "v";
+            barrido(myArray, "v");
+            cotage(myArray, "v");
             break;
         case "container cursortrigo":
             document.getElementById(id).innerHTML =
@@ -158,13 +186,17 @@ function setMaterial(id) {
                 );
             document.getElementById("container").classList.add("cursornormal");
             document.getElementById(id).style.pointerEvents = "none";
-            miarray[parseInt(id)] = 'trigo';
-            console.log(miarray);
+            cambiarMaterial();
+            myArray[parseInt(id)] = "t";
+            barrido(myArray, "t");
+            cotage(myArray, "t");
             break;
         default:
             break;
     }
 }
+
+
 
 //Ps el boton de reinicio
 function restart() {
@@ -172,10 +204,9 @@ function restart() {
     if (mensaje.valueOf()) {
         for (let i = 0; i < 16; i++) {
             document.getElementById(i).innerHTML = "";
+            ruletaInicio();
             document.getElementById(i).style.pointerEvents = "auto";
-
-            document
-                .getElementById("container")
+            document.getElementById("container")
                 .classList.remove(
                     "cursormadera",
                     "cursortrigo",
@@ -185,12 +216,11 @@ function restart() {
                 );
             document.getElementById("container").classList.add("cursornormal");
         }
+        myArray = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
         randomBuilds();
+        ruletaInicio();
     } else {}
 }
-
-//cuando se carga el html se generan los edificios con Random
-window.onload = randomBuilds();
 
 //funcion que genera la seleccion de edificios aleatoria
 function randomBuilds() {
@@ -350,90 +380,134 @@ function randomBuilds() {
                 "<img src='/public/builds/uni.png' alt='uni' class='img-builds'/>";
             break;
 
-            break;
-        case 2:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/palacioMandras.png' alt='palacioMandras' class='img-builds'/>";
-            break;
-        case 3:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/atalayaOpalo.png' alt='atalayaOpalo' class='img-builds'/>";
-            break;
-        case 4:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/archivoSegundaEdad.png' alt='archivoSegundaEdad' class='img-builds'/>";
-            break;
-        case 5:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/santuario.png' alt='santuario' class='img-builds'/>";
-            break;
-        case 6:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/castilloBarret.png' alt='castilloBarret' class='img-builds'/>";
-            break;
-        case 7:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/forum.png' alt='forum' class='img-builds'/>";
-            break;
-        case 8:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/catedral.png' alt='catedral' class='img-builds'/>";
-            break;
-        case 9:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/starloom.png' alt='starloom' class='img-builds'/>";
-            break;
-        case 10:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/Fuerte.png' alt='Fuerte' class='img-builds'/>";
-            break;
-        case 11:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/estatua.png' alt='estatua' class='img-builds'/>";
-            break;
-        case 12:
-            document.getElementById("c8").innerHTML =
-                "<img src='/public/builds/uni.png' alt='uni' class='img-builds'/>";
-            break;
-
         default:
             break;
     }
 }
 
-//Ruleta de materiales
-var materiales = [];
-
-function ruletaInicio() {
-    var materiales = ["m", "m", "m", "p", "p", "p", "v", "v", "v", "t", "t", "t", "l", "l", "l", ];
-    materiales = materiales.sort(function() {
+//Funcion que revuelve los materiales del array materiales
+async function randomArray() {
+    materiales = ["m", "m", "m", "p", "p", "p", "v", "v", "v", "t", "t", "t", "l", "l", "l"];
+    materiales = await materiales.sort(function() {
         return Math.random() - 0.5;
-    })
-    var conc = '';
-    for (let i = 0; i < materiales.length; i++) {
-        conc += materiales[i]
-    }
-    console.log(conc)
+    });
+}
 
+//Funcion que agrega los primeros 3 materiales
+function ruletaInicio() {
+    randomArray()
+    if (materiales[0] === 'm') {
+        document.getElementById(`m1`).innerHTML = `<img src="/public/madera.png" class="img-material" id="madera" onclick='madera()'>`;
+        madera();
+        idMaterial = 'm1';
+
+    } else if (materiales[0] === 'p') {
+        document.getElementById(`m1`).innerHTML = `<img src='/public/Piedra.png' id='piedra' class='img-material' onclick='piedra()'>`;
+        piedra();
+        idMaterial = 'm1';
+
+    } else if (materiales[0] === 'v') {
+        document.getElementById(`m1`).innerHTML = `<img src='/public/Vidrio.png' id='vidrio' class='img-material' onclick='vidrio()'>`;
+        vidrio();
+        idMaterial = 'm1';
+
+    } else if (materiales[0] === 't') {
+        document.getElementById(`m1`).innerHTML = `<img src='/public/Trigo.png' id='trigo' class='img-material' onclick='trigo()'>`;
+        trigo();
+        idMaterial = 'm1';
+
+    } else if (materiales[0] === 'l') {
+        document.getElementById(`m1`).innerHTML = `<img src='/public/Ladrillo.png' id='ladrillo' class='img-material' onclick='ladrillo()'>`;
+        ladrillo();
+        idMaterial = 'm1';
+    }
+    if (materiales[1] === 'm') {
+        document.getElementById(`m2`).innerHTML = `<img src="/public/madera.png" class="img-material" id="madera" onclick='madera()'>`;
+        madera();
+        idMaterial = 'm2';
+
+    } else if (materiales[1] === 'p') {
+        document.getElementById('m2').innerHTML = `<img src='/public/Piedra.png' id='piedra' class='img-material' onclick='piedra()'>`;
+        piedra();
+        idMaterial = 'm2';
+
+    } else if (materiales[1] === 'v') {
+        document.getElementById('m2').innerHTML = `<img src='/public/Vidrio.png' id='vidrio' class='img-material' onclick='vidrio()'>`;
+        vidrio();
+        idMaterial = 'm2';
+
+    } else if (materiales[1] === 't') {
+        document.getElementById('m2').innerHTML = `<img src='/public/Trigo.png' id='trigo' class='img-material' onclick='trigo()'>`;
+        trigo();
+        idMaterial = 'm2';
+
+    } else if (materiales[1] === 'l') {
+        document.getElementById('m2').innerHTML = `<img src='/public/Ladrillo.png' id='ladrillo' class='img-material' onclick='ladrillo()'>`;
+        ladrillo();
+        idMaterial = 'm2';
+
+    }
+    if (materiales[2] === 'm') {
+        document.getElementById(`m3`).innerHTML = `<img src="/public/madera.png" class="img-material" id="madera" onclick='madera()'>`;
+        madera();
+        idMaterial = 'm3';
+
+    } else if (materiales[2] === 'p') {
+        document.getElementById(`m3`).innerHTML = `<img src='/public/Piedra.png' id='piedra' class='img-material' onclick='piedra()'>`;
+        piedra();
+        idMaterial = 'm3';
+
+    } else if (materiales[2] === 'v') {
+        document.getElementById(`m3`).innerHTML = `<img src='/public/Vidrio.png' id='vidrio' class='img-material' onclick='vidrio()'>`;
+        vidrio();
+        idMaterial = 'm3';
+
+    } else if (materiales[2] === 't') {
+        document.getElementById(`m3`).innerHTML = `<img src='/public/Trigo.png' id='trigo' class='img-material' onclick='trigo()'>`;
+        trigo();
+        idMaterial = 'm3';
+
+    } else if (materiales[2] === 'l') {
+        document.getElementById(`m3`).innerHTML = `<img src='/public/Ladrillo.png' id='ladrillo' class='img-material' onclick='ladrillo()'>`;
+        ladrillo();
+        idMaterial = 'm3';
+    }
+    ruletaMateriales();
+    ruletaMateriales();
+    ruletaMateriales();
+}
+
+
+//funcion de cambio de materiales ruleta
+async function cambiarMaterial() {
+    switch (materiales[0]) {
+        case 'm':
+            document.getElementById(idMaterial).innerHTML = await `<img src="/public/madera.png"id="madera" class="img-material" onclick='madera()'>`;
+            ruletaMateriales();
+            break;
+        case 'l':
+            document.getElementById(idMaterial).innerHTML = await `<img src='/public/Ladrillo.png' id='ladrillo' class='img-material' onclick='ladrillo()'>`;
+            ruletaMateriales();
+            break;
+        case 'p':
+            document.getElementById(idMaterial).innerHTML = await `<img src='/public/Piedra.png' id='piedra' class='img-material' onclick='piedra()'>`;
+            ruletaMateriales();
+            break;
+        case 'v':
+            document.getElementById(idMaterial).innerHTML = await `<img src='/public/Vidrio.png' id='vidrio' class='img-material' onclick='vidrio()'>`;
+            ruletaMateriales();
+            break;
+        case 't':
+            document.getElementById(idMaterial).innerHTML = await `<img src='/public/Trigo.png' id='trigo' class='img-material' onclick='trigo()'>`;
+            ruletaMateriales();
+            break;
+        default:
+            break;
+    }
 }
 
 function ruletaMateriales() {
-    for (var i = 0, len = materiales.length; i < len; i++) {
-        alert(materiales.slice(0, 16).join(","));
-        materiales.push(materiales.shift());
-        console.log(materiales[i])
-    }
-
-    // for (var i = 0; i < 15; i++) {
-    //     for (var j = 0; j < 15; j++) {
-    //         console.log(materiales[(i + j) % materiales.length])
-    //     }
-    //     // console.log('****')
-    // }
-    // materiales.forEach((x, i, t) => {
-    //     console.log(i, t);
-    //     t.push(t.shift());
-    // });
+    var primerMaterial = materiales[0];
+    materiales.shift();
+    materiales.push(primerMaterial);
 }
-window.onload = ruletaInicio();
-window.onload = ruletaMateriales();
