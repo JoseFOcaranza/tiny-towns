@@ -1,4 +1,3 @@
-//var myArray = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 //Funciones para cambiar el cursor a la imagen del material seleccionado
 document.getElementById("madera").onclick = function () {
   document
@@ -90,6 +89,11 @@ function setMaterial(id) {
       myArray[parseInt(id)] = "p";
       barrido(myArray, "p");
       cotage(myArray, "p");
+      //cathedral(myArray, "p");
+      //fountain(myArray, "p");
+      //cloister(myArray, "p");
+      //archGuild(myArray, "p");
+      //inn(myArray, "p");
       break;
     case "container cursorladrillo":
       document.getElementById(id).innerHTML =
@@ -108,6 +112,10 @@ function setMaterial(id) {
       myArray[parseInt(id)] = "l";
       barrido(myArray, "l");
       cotage(myArray, "l");
+      //cathedral(myArray, "l");
+      //cloister(myArray, "l");
+      //archGuild(myArray, "l");
+      //palaceMandras(myArray, "l");
       break;
     case "container cursormadera":
       document.getElementById(id).innerHTML =
@@ -126,6 +134,11 @@ function setMaterial(id) {
       myArray[parseInt(id)] = "m";
       barrido(myArray, "m");
       cotage(myArray, "m");
+      //cathedral(myArray, "m");
+      //fountain(myArray, "m");
+      //cloister(myArray, "m");
+      //archGuild(myArray, "m");
+      //palaceMandras(myArray, "m");
       break;
     case "container cursorvidrio":
       document.getElementById(id).innerHTML =
@@ -144,6 +157,11 @@ function setMaterial(id) {
       myArray[parseInt(id)] = "v";
       barrido(myArray, "v");
       cotage(myArray, "v");
+      //cathedral(myArray, "v");
+      //cloister(myArray, "v");
+      //archGuild(myArray, "v");
+      //palaceMandras(myArray, "v");
+      //inn(myArray, "v");
       break;
     case "container cursortrigo":
       document.getElementById(id).innerHTML =
@@ -162,6 +180,10 @@ function setMaterial(id) {
       myArray[parseInt(id)] = "t";
       barrido(myArray, "t");
       cotage(myArray, "t");
+      //cathedral(myArray, "t");
+      //archGuild(myArray, "t");
+      //palaceMandras(myArray, "t");
+      //inn(myArray, "t");
       break;
     default:
       break;
