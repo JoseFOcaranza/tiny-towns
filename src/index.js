@@ -96,6 +96,9 @@ function setMaterial(id) {
       inn(myArray, "p");
       orchard(myArray, "p");
       abbey(myArray, "p");
+      chapel(myArray, "p");
+      temple(myArray, "p");
+      almshouse(myArray, "p");
       break;
     case "container cursorladrillo":
       document.getElementById(id).innerHTML =
@@ -120,6 +123,7 @@ function setMaterial(id) {
       palaceMandras(myArray, "l");
       granary(myArray, "l");
       abbey(myArray, "l");
+      temple(myArray, "l");
 
       break;
     case "container cursormadera":
@@ -148,6 +152,7 @@ function setMaterial(id) {
       granary(myArray, "m");
       greehouse(myArray, "m");
       orchard(myArray, "m");
+      feastHall(myArray, "m");
       break;
     case "container cursorvidrio":
       document.getElementById(id).innerHTML =
@@ -173,7 +178,10 @@ function setMaterial(id) {
       inn(myArray, "v");
       greehouse(myArray, "v");
       abbey(myArray, "v");
-
+      chapel(myArray, "v");
+      temple(myArray, "v");
+      almshouse(myArray, "v");
+      feastHall(myArray, "v");
       break;
     case "container cursortrigo":
       document.getElementById(id).innerHTML =

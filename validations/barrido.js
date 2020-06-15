@@ -6,7 +6,6 @@ function barrido(myArray, material) {
   var valor = myArray.indexOf(material);
 
   indices.push(valor);
-  console.log(indices);
   return indices;
 }
 
@@ -1722,8 +1721,6 @@ function inn(myArray, material) {
 
 function granary(myArray, material) {
   var condicion = barrido(myArray, material);
-  //console.log("ENtro a farm");
-  console.log(myArray[condicion]);
   switch (myArray[condicion]) {
     case "t":
       if (
@@ -2524,13 +2521,553 @@ function abbey(myArray, material) {
         myArray[parseInt(condicion)] == "v" &&
         myArray[parseInt(condicion) + 1] == "p" &&
         myArray[parseInt(condicion) - 3] == "p" &&
-        myArray[parseInt(condicion) - 7] == "m"
+        myArray[parseInt(condicion) - 7] == "l"
       ) {
         //Llamar la funcion construir()
         console.log("CONSTRUYE abadia espejeado 270 terminando con v");
       }
       break;
 
+    default:
+      break;
+  }
+}
+
+function chapel(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "p":
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 2] == "v" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p" &&
+        myArray[parseInt(condicion) + 9] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 2] == "p" &&
+        myArray[parseInt(condicion) + 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 270 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 2] == "p" &&
+        myArray[parseInt(condicion) + 6] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 4] == "v" &&
+        myArray[parseInt(condicion) + 7] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 270 terminando con p");
+      }
+      break;
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 2] == "p" &&
+        myArray[parseInt(condicion) + 3] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 3] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v" &&
+        myArray[parseInt(condicion) + 9] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla rotado 270 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 3] == "v" &&
+        myArray[parseInt(condicion) + 7] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "v" &&
+        myArray[parseInt(condicion) + 6] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) + 3] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE capilla espejeado 270 terminando con v");
+      }
+      break;
+
+    default:
+      break;
+  }
+}
+
+function temple(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "l":
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 2] == "v" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 8] == "p" &&
+        myArray[parseInt(condicion) + 9] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 90 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 3] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 180 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 5] == "v" &&
+        myArray[parseInt(condicion) + 4] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 270 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 2] == "p" &&
+        myArray[parseInt(condicion) + 6] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 3] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 90 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 5] == "v" &&
+        myArray[parseInt(condicion) + 1] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 180 terminando con l");
+      }
+      if (
+        myArray[parseInt(condicion)] == "l" &&
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 7] == "v" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 270 terminando con l");
+      }
+      break;
+    case "p":
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) - 2] == "l" &&
+        myArray[parseInt(condicion) - 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "l" &&
+        myArray[parseInt(condicion) - 8] == "l" &&
+        myArray[parseInt(condicion) + 1] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 2] == "l" &&
+        myArray[parseInt(condicion) + 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 8] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 270 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "l" &&
+        myArray[parseInt(condicion) - 2] == "l" &&
+        myArray[parseInt(condicion) + 4] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "v" &&
+        myArray[parseInt(condicion) + 4] == "l" &&
+        myArray[parseInt(condicion) + 8] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 90 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) + 1] == "l" &&
+        myArray[parseInt(condicion) + 2] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 180 terminando con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) - 4] == "l" &&
+        myArray[parseInt(condicion) - 8] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 270 terminando con p");
+      }
+      break;
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 2] == "l" &&
+        myArray[parseInt(condicion) + 3] == "l" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 5] == "l" &&
+        myArray[parseInt(condicion) - 9] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 2] == "l" &&
+        myArray[parseInt(condicion) - 3] == "l" &&
+        myArray[parseInt(condicion) - 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 5] == "l" &&
+        myArray[parseInt(condicion) + 9] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo rotado 270 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 5] == "l" &&
+        myArray[parseInt(condicion) - 6] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) + 3] == "l" &&
+        myArray[parseInt(condicion) + 7] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 90 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 5] == "l" &&
+        myArray[parseInt(condicion) + 6] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 180 terminando con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) - 3] == "l" &&
+        myArray[parseInt(condicion) - 7] == "l"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE templo espejeado 270 terminando con v");
+      }
+      break;
+
+    default:
+      break;
+  }
+}
+
+function almshouse(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "p" &&
+        myArray[parseInt(condicion) - 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE asilo terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "p" &&
+        myArray[parseInt(condicion) - 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 90 terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 180 terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 8] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 270 terminada con v");
+      }
+      break;
+    case "p":
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 1] == "p" &&
+        myArray[parseInt(condicion) + 2] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE asilo terminada con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) + 4] == "p" &&
+        myArray[parseInt(condicion) + 8] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 90 terminada con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 1] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 180 terminada con p");
+      }
+      if (
+        myArray[parseInt(condicion)] == "p" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) + 4] == "p"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye asilo rotada 270 terminada con p");
+      }
+      break;
+    default:
+      break;
+  }
+}
+
+function feastHall(myArray, material) {
+  var condicion = barrido(myArray, material);
+  switch (myArray[condicion]) {
+    case "v":
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 1] == "m" &&
+        myArray[parseInt(condicion) - 2] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE SalaDeFiestas terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) - 4] == "m" &&
+        myArray[parseInt(condicion) - 8] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 90 terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 2] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 180 terminada con v");
+      }
+      if (
+        myArray[parseInt(condicion)] == "v" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 8] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 270 terminada con v");
+      }
+      break;
+    case "m":
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 1] == "m" &&
+        myArray[parseInt(condicion) + 2] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("CONSTRUYE SalaDeFiestas terminada con m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) + 4] == "m" &&
+        myArray[parseInt(condicion) + 8] == "v"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 90 terminada con m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 1] == "v" &&
+        myArray[parseInt(condicion) + 1] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 180 terminada con m");
+      }
+      if (
+        myArray[parseInt(condicion)] == "m" &&
+        myArray[parseInt(condicion) - 4] == "v" &&
+        myArray[parseInt(condicion) + 4] == "m"
+      ) {
+        //Llamar la funcion construir()
+        console.log("construye SalaDeFiestas rotada 270 terminada con m");
+      }
+      break;
     default:
       break;
   }
