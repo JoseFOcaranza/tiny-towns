@@ -97,147 +97,163 @@ async function piedra() {
 function setMaterial(id) {
     switch (document.getElementById("container").classList.value) {
         case "container cursorpiedra":
-            document.getElementById(id).innerHTML =
-                "<img src='/public/Piedra.png' alt='piedra' class='img-material'/>";
-            document
-                .getElementById("container")
-                .classList.remove(
-                    "cursormadera",
-                    "cursortrigo",
-                    "cursorladrillo",
-                    "cursorvidrio",
-                    "cursorpiedra"
-                );
-            document.getElementById("container").classList.add("cursornormal");
-            document.getElementById(id).style.pointerEvents = "none";
-            cambiarMaterial();
-            myArray[parseInt(id)] = "p";
-            barrido(myArray, "p");
-            cotage(myArray, "p");
-            cathedral(myArray, "p");
-            fountain(myArray, "p");
-            cloister(myArray, "p");
-            archGuild(myArray, "p");
-            inn(myArray, "p");
-            orchard(myArray, "p");
-            abbey(myArray, "p");
-            chapel(myArray, "p");
-            temple(myArray, "p");
-            almshouse(myArray, "p");
+            if (document.getElementById(id).classList.contains('construir')) {} else {
+                document.getElementById(id).innerHTML =
+                    "<img src='/public/Piedra.png' alt='piedra' class='img-material'/>";
+                document
+                    .getElementById("container")
+                    .classList.remove(
+                        "cursormadera",
+                        "cursortrigo",
+                        "cursorladrillo",
+                        "cursorvidrio",
+                        "cursorpiedra"
+                    );
+                document.getElementById("container").classList.add("cursornormal");
+                document.getElementById(id).style.pointerEvents = "none";
+                cambiarMaterial();
+                myArray[parseInt(id)] = "p";
+                barrido(myArray, "p");
+                cotage(myArray, "p");
+                cathedral(myArray, "p");
+                fountain(myArray, "p");
+                cloister(myArray, "p");
+                archGuild(myArray, "p");
+                inn(myArray, "p");
+                orchard(myArray, "p");
+                abbey(myArray, "p");
+                chapel(myArray, "p");
+                temple(myArray, "p");
+                almshouse(myArray, "p");
+            }
             break;
         case "container cursorladrillo":
-            document.getElementById(id).innerHTML =
-                "<img src='/public/Ladrillo.png' alt='Ladrillo' class='img-material'/>";
-            document
-                .getElementById("container")
-                .classList.remove(
-                    "cursormadera",
-                    "cursortrigo",
-                    "cursorladrillo",
-                    "cursorvidrio",
-                    "cursorpiedra"
-                );
-            document.getElementById("container").classList.add("cursornormal");
-            document.getElementById(id).style.pointerEvents = "none";
-            cambiarMaterial();
-            myArray[parseInt(id)] = "l";
-            barrido(myArray, "l");
-            cotage(myArray, "l");
-            cathedral(myArray, "l");
-            cloister(myArray, "l");
-            archGuild(myArray, "l");
-            palaceMandras(myArray, "l");
-            granary(myArray, "l");
-            abbey(myArray, "l");
-            temple(myArray, "l");
+            if (document.getElementById(id).classList.contains('construir')) {
 
+            } else {
+                document.getElementById(id).innerHTML =
+                    "<img src='/public/Ladrillo.png' alt='Ladrillo' class='img-material'/>";
+                document
+                    .getElementById("container")
+                    .classList.remove(
+                        "cursormadera",
+                        "cursortrigo",
+                        "cursorladrillo",
+                        "cursorvidrio",
+                        "cursorpiedra"
+                    );
+                document.getElementById("container").classList.add("cursornormal");
+                document.getElementById(id).style.pointerEvents = "none";
+                cambiarMaterial();
+                myArray[parseInt(id)] = "l";
+                barrido(myArray, "l");
+                cotage(myArray, "l");
+                cathedral(myArray, "l");
+                cloister(myArray, "l");
+                archGuild(myArray, "l");
+                palaceMandras(myArray, "l");
+                granary(myArray, "l");
+                abbey(myArray, "l");
+                temple(myArray, "l");
+            }
             break;
         case "container cursormadera":
-            document.getElementById(id).innerHTML =
-                "<img src='/public/madera.png' alt='madera' class='img-material'/>";
-            document
-                .getElementById("container")
-                .classList.remove(
-                    "cursormadera",
-                    "cursortrigo",
-                    "cursorladrillo",
-                    "cursorvidrio",
-                    "cursorpiedra"
-                );
-            document.getElementById("container").classList.add("cursornormal");
-            document.getElementById(id).style.pointerEvents = "none";
-            cambiarMaterial();
-            myArray[parseInt(id)] = "m";
-            barrido(myArray, "m");
-            cotage(myArray, "m");
-            farm(myArray, "m");
-            cathedral(myArray, "m");
-            fountain(myArray, "m");
-            cloister(myArray, "m");
-            archGuild(myArray, "m");
-            palaceMandras(myArray, "m");
-            granary(myArray, "m");
-            greehouse(myArray, "m");
-            orchard(myArray, "m");
-            feastHall(myArray, "m");
+            if (document.getElementById(id).classList.contains('construir')) {
+
+            } else {
+                document.getElementById(id).innerHTML =
+                    "<img src='/public/madera.png' alt='madera' class='img-material'/>";
+                document
+                    .getElementById("container")
+                    .classList.remove(
+                        "cursormadera",
+                        "cursortrigo",
+                        "cursorladrillo",
+                        "cursorvidrio",
+                        "cursorpiedra"
+                    );
+                document.getElementById("container").classList.add("cursornormal");
+                document.getElementById(id).style.pointerEvents = "none";
+                cambiarMaterial();
+                myArray[parseInt(id)] = "m";
+                barrido(myArray, "m");
+                cotage(myArray, "m");
+                farm(myArray, "m");
+                cathedral(myArray, "m");
+                fountain(myArray, "m");
+                cloister(myArray, "m");
+                archGuild(myArray, "m");
+                palaceMandras(myArray, "m");
+                granary(myArray, "m");
+                greehouse(myArray, "m");
+                orchard(myArray, "m");
+                feastHall(myArray, "m");
+            }
             break;
         case "container cursorvidrio":
-            document.getElementById(id).innerHTML =
-                "<img src='/public/Vidrio.png' alt='Vidrio' class='img-material'/>";
-            document
-                .getElementById("container")
-                .classList.remove(
-                    "cursormadera",
-                    "cursortrigo",
-                    "cursorladrillo",
-                    "cursorvidrio",
-                    "cursorpiedra"
-                );
-            document.getElementById("container").classList.add("cursornormal");
-            document.getElementById(id).style.pointerEvents = "none";
-            cambiarMaterial();
-            myArray[parseInt(id)] = "v";
-            barrido(myArray, "v");
-            cotage(myArray, "v");
-            cathedral(myArray, "v");
-            cloister(myArray, "v");
-            archGuild(myArray, "v");
-            palaceMandras(myArray, "v");
-            inn(myArray, "v");
-            greehouse(myArray, "v");
-            abbey(myArray, "v");
-            chapel(myArray, "v");
-            temple(myArray, "v");
-            almshouse(myArray, "v");
-            feastHall(myArray, "v");
+            if (document.getElementById(id).classList.contains('construir')) {
+
+            } else {
+                document.getElementById(id).innerHTML =
+                    "<img src='/public/Vidrio.png' alt='Vidrio' class='img-material'/>";
+                document
+                    .getElementById("container")
+                    .classList.remove(
+                        "cursormadera",
+                        "cursortrigo",
+                        "cursorladrillo",
+                        "cursorvidrio",
+                        "cursorpiedra"
+                    );
+                document.getElementById("container").classList.add("cursornormal");
+                document.getElementById(id).style.pointerEvents = "none";
+                cambiarMaterial();
+                myArray[parseInt(id)] = "v";
+                barrido(myArray, "v");
+                cotage(myArray, "v");
+                cathedral(myArray, "v");
+                cloister(myArray, "v");
+                archGuild(myArray, "v");
+                palaceMandras(myArray, "v");
+                inn(myArray, "v");
+                greehouse(myArray, "v");
+                abbey(myArray, "v");
+                chapel(myArray, "v");
+                temple(myArray, "v");
+                almshouse(myArray, "v");
+                feastHall(myArray, "v");
+            }
             break;
         case "container cursortrigo":
-            document.getElementById(id).innerHTML =
-                "<img src='/public/Trigo.png' alt='Trigo' class='img-material'/>";
-            document
-                .getElementById("container")
-                .classList.remove(
-                    "cursormadera",
-                    "cursortrigo",
-                    "cursorladrillo",
-                    "cursorvidrio",
-                    "cursorpiedra"
-                );
-            document.getElementById("container").classList.add("cursornormal");
-            document.getElementById(id).style.pointerEvents = "none";
-            cambiarMaterial();
-            myArray[parseInt(id)] = "t";
-            barrido(myArray, "t");
-            cotage(myArray, "t");
-            farm(myArray, "t");
-            cathedral(myArray, "t");
-            archGuild(myArray, "t");
-            palaceMandras(myArray, "t");
-            inn(myArray, "t");
-            granary(myArray, "t");
-            greehouse(myArray, "t");
-            orchard(myArray, "t");
+            if (document.getElementById(id).classList.contains('construir')) {
 
+            } else {
+                document.getElementById(id).innerHTML =
+                    "<img src='/public/Trigo.png' alt='Trigo' class='img-material'/>";
+                document
+                    .getElementById("container")
+                    .classList.remove(
+                        "cursormadera",
+                        "cursortrigo",
+                        "cursorladrillo",
+                        "cursorvidrio",
+                        "cursorpiedra"
+                    );
+                document.getElementById("container").classList.add("cursornormal");
+                document.getElementById(id).style.pointerEvents = "none";
+                cambiarMaterial();
+                myArray[parseInt(id)] = "t";
+                barrido(myArray, "t");
+                cotage(myArray, "t");
+                farm(myArray, "t");
+                cathedral(myArray, "t");
+                archGuild(myArray, "t");
+                palaceMandras(myArray, "t");
+                inn(myArray, "t");
+                granary(myArray, "t");
+                greehouse(myArray, "t");
+                orchard(myArray, "t");
+            }
             break;
         default:
             break;
@@ -258,9 +274,13 @@ function restart() {
                     "cursortrigo",
                     "cursorladrillo",
                     "cursorvidrio",
-                    "cursorpiedra"
+                    "cursorpiedra",
+                    "construir",
+                    "construido"
                 );
             document.getElementById("container").classList.add("cursornormal");
+            document.getElementById(i).classList.remove("td-tablero", "tdh", "tda", "construir", "construido");
+            document.getElementById(i).classList.toggle("td-tablero");
         }
         myArray = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
         randomBuilds();

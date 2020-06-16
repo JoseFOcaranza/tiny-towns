@@ -22,12 +22,49 @@ header {
 
 /* //////////// CLASES ///////////// */
 
+.construido {
+    background: radial-gradient(#794068, #6e2a5a);
+    padding: 7px;
+    width: 140px;
+    height: 140px;
+    border-radius: 40px;
+    color: black;
+    margin: 10px;
+    align-items: center;
+    pointer-events: none;
+}
+
+.construir {
+    background-color: #275c0e;
+    padding: 7px;
+    width: 140px;
+    height: 140px;
+    border-radius: 40px;
+    color: black;
+    margin: 10px;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.construir:hover {
+    background-color: #142a0a;
+}
+
 .img-builds {
     width: 120px;
     height: auto;
     display: flex;
     margin: auto;
     border-radius: 10px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img-builds:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .container-edificios {
